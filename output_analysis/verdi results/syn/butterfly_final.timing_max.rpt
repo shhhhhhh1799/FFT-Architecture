@@ -1,0 +1,178 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'fft_top' contains 7 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fft_top
+Version: V-2023.12-SP5-4
+Date   : Tue Aug  5 14:34:26 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TT_0P80V_0P00V_0P00V_0P00V_25C   Library: GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_BF_1/U_CBFP_1/U_MAG_1_IM/o_cnt_reg_1__1_
+              (rising edge-triggered flip-flop clocked by cnt_clk)
+  Endpoint: U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/dout_re_reg_5__10_
+            (rising edge-triggered flip-flop clocked by cnt_clk)
+  Path Group: cnt_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock cnt_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_BF_1/U_CBFP_1/U_MAG_1_IM/o_cnt_reg_1__1_/CLK (SC7P5T_SDFFRQX4_CSC20L)
+                                                          0.00 #     0.00 r
+  U_BF_1/U_CBFP_1/U_MAG_1_IM/o_cnt_reg_1__1_/Q (SC7P5T_SDFFRQX4_CSC20L)
+                                                         59.22      59.22 f
+  U_BF_1/U_CBFP_1/U_MAG_1_IM/o_cnt[71] (mag_detect_1_I_WIDTH24_DATA_WIDTH16_0)
+                                                          0.00      59.22 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/i_cnt_im[71] (min_detect_1_DATA_WIDTH16)
+                                                          0.00      59.22 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U287/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         16.33      75.55 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U288/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         14.56      90.11 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U127/Z (SC7P5T_ND2X1_MR_CSC20L)
+                                                         13.59     103.71 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U87/Z (SC7P5T_AO21IAX4_CSC20L)
+                                                         26.57     130.28 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U139/Z (SC7P5T_MUX2X2_CSC20L)
+                                                         32.67     162.95 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U292/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         17.50     180.45 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U102/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         17.96     198.41 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U101/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         25.63     224.03 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U11/CON (SC7P5T_FCGENIX3_CSC20L)
+                                                         26.85     250.88 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U165/Z (SC7P5T_MUX2X2_CSC20L)
+                                                         45.51     296.40 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U296/CON (SC7P5T_FCGENIX2_CSC20L)
+                                                         17.47     313.87 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U130/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         22.98     336.85 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U129/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         23.12     359.97 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U162/CON (SC7P5T_FCGENIX2_CSC20L)
+                                                         28.41     388.38 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U302/Z (SC7P5T_MUX2X1_CSC20L)
+                                                         39.61     427.99 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U304/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         17.27     445.26 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U117/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         14.78     460.04 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U176/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         19.14     479.17 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U174/Z (SC7P5T_NR2X1_MR_CSC20L)
+                                                         11.70     490.88 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U17/Z (SC7P5T_OR2X2_A_CSC20L)
+                                                         23.60     514.47 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U16/Z (SC7P5T_OR2X4_A_CSC20L)
+                                                         23.40     537.87 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U305/Z (SC7P5T_MUX2X2_CSC20L)
+                                                         37.43     575.30 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U310/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         17.19     592.50 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U311/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         18.83     611.32 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U313/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         20.60     631.93 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U219/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         19.42     651.35 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U114/Z (SC7P5T_BUFX4_CSC20L)
+                                                         21.95     673.30 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U106/Z (SC7P5T_MUX2X2_CSC20L)
+                                                         30.57     703.87 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U317/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         13.44     717.31 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U318/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         17.73     735.05 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U188/Z (SC7P5T_AOI21X1_MR_CSC20L)
+                                                         19.23     754.28 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U186/Z (SC7P5T_NR2X1_MR_CSC20L)
+                                                         11.62     765.90 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U187/Z (SC7P5T_NR2X2_MR_CSC20L)
+                                                         15.25     781.14 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U100/Z (SC7P5T_INVX4_CSC20L)
+                                                         10.83     791.97 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U99/Z (SC7P5T_MUX2X2_CSC20L)
+                                                         36.83     828.80 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U320/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         16.49     845.29 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U321/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         18.33     863.62 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U157/Z (SC7P5T_AO22IA1A2X1_CSC20L)
+                                                         18.52     882.14 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U156/Z (SC7P5T_OAI22X2_CSC20L)
+                                                         22.66     904.81 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U15/Z (SC7P5T_MUX2X1_A_CSC20L)
+                                                         41.50     946.31 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U330/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         17.35     963.66 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U331/CON (SC7P5T_FCGENIX1_CSC20L)
+                                                         14.90     978.56 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U333/Z (SC7P5T_NR2X1_MR_CSC20L)
+                                                         16.64     995.20 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U128/Z (SC7P5T_OA21IAX2_CSC20L)
+                                                         14.70    1009.90 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U335/CON (SC7P5T_FCGENIX3_CSC20L)
+                                                         24.79    1034.69 r
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/U336/Z (SC7P5T_MUX2X2_CSC20L)
+                                                         42.54    1077.23 f
+  U_BF_1/U_CBFP_1/U_MIN_DETECT_1/min_cnt_0[0] (min_detect_1_DATA_WIDTH16)
+                                                          0.00    1077.23 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/min_cnt_0[0] (bit_shift_1_LENGTH13_I_WIDTH25_O_WIDTH12_DATA_WIDTH16)
+                                                          0.00    1077.23 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U425/Z (SC7P5T_BUFX8_A_CSC20L)
+                                                         28.33    1105.56 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U343/Z (SC7P5T_BUFX20_CSC20L)
+                                                         24.13    1129.69 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U459/Z (SC7P5T_INVX20_CSC20L)
+                                                         10.32    1140.02 r
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U458/Z (SC7P5T_INVX12_CSC20L)
+                                                          7.25    1147.26 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U457/Z (SC7P5T_INVX16_CSC20L)
+                                                          6.87    1154.14 r
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U292/Z (SC7P5T_INVX20_CSC20L)
+                                                          9.32    1163.46 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U621/Z (SC7P5T_MUX2X1_A_CSC20L)
+                                                         36.36    1199.82 r
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U622/Z (SC7P5T_INVX2_CSC20L)
+                                                          9.40    1209.22 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U2413/Z (SC7P5T_AOI22X1_CSC20L)
+                                                         19.33    1228.55 r
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U2970/Z (SC7P5T_OAI222X1_CSC20L)
+                                                         35.55    1264.09 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U3233/Z (SC7P5T_OAI22X1_CSC20L)
+                                                         19.06    1283.15 r
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U349/Z (SC7P5T_AOI21X1_MR_CSC20L)
+                                                         11.59    1294.74 f
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/U3235/Z (SC7P5T_OAI211X1_CSC20L)
+                                                         12.62    1307.36 r
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/dout_re_reg_5__10_/D (SC7P5T_SDFFRQX2_A_CSC20L)
+                                                          0.00    1307.36 r
+  data arrival time                                               1307.36
+
+  clock cnt_clk (rise edge)                            1400.00    1400.00
+  clock network delay (ideal)                             0.00    1400.00
+  clock uncertainty                                     -50.00    1350.00
+  U_BF_1/U_CBFP_1/U_BIT_SHIFT_CBFP_1/dout_re_reg_5__10_/CLK (SC7P5T_SDFFRQX2_A_CSC20L)
+                                                          0.00    1350.00 r
+  library setup time                                    -42.27    1307.73
+  data required time                                              1307.73
+  --------------------------------------------------------------------------
+  data required time                                              1307.73
+  data arrival time                                              -1307.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+1
