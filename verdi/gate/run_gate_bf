@@ -1,0 +1,10 @@
+vcs -full64\
+    -kdb\
+    -sverilog\
+    -debug_access+all\
+    -v /pdk/GF22FDX_SC7P5T_116CPP_BASE_CSC20L_FDK_RELV02R80/verilog/GF22FDX_SC7P5T_116CPP_BASE_CSC20L.v\
+    -v /pdk/GF22FDX_SC7P5T_116CPP_BASE_CSC20L_FDK_RELV02R80/verilog/prim.v\
+    -f filelist_gate_bf\ 
+    -o simv
+
+./simv -verdi

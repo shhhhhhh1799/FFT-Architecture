@@ -1,0 +1,1 @@
+dc_shell -f butterfly.tcl | tee run.log
