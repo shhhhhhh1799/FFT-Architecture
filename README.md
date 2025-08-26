@@ -114,23 +114,16 @@ Module 0 → Module 1 → Module 2 순으로 파이프라인 구조가 이어지
 FFT 성능을 평가하기 위해 **CBFP 적용 유무에 따른 SQNR (Signal-to-Quantization-Noise Ratio)** 를 측정했습니다.  
 **입력 데이터 타입**은 `Random`과 `Cosine` 두 가지 경우로 나누어 비교했습니다.
 
-### ✅ CBFP 적용 시
-- Random 입력: **평균 41.21 dB**  
-- Cosine 입력: **40.83 dB**
-
 <p align="center">
-  <img src="https://github.com/shhhhhhh1799/Image/blob/main/SQNR(CBFP).png" alt="SQNR with CBFP" width="700"/>
+  <img src="https://github.com/shhhhhhh1799/Image/blob/main/SQNR.png" alt="SQNR with vs without CBFP" width="750"/>
 </p>
 
----
+### 📈 분석
+- CBFP를 적용하지 않은 경우, Random 입력 데이터에서는 **SQNR이 7.24 dB**로 급격히 저하됨 → **연산 과정에서 비트 폭 손실 심각**  
+- CBFP 적용 시, Random 입력 데이터에서도 **41 dB 이상**으로 유지 → **정규화 덕분에 안정적인 성능 확보**  
+- Cosine 입력 데이터는 주파수 성분이 제한적이라 CBFP 적용 유무와 무관하게 약 **40 dB 수준**의 성능을 유지  
 
-### ❌ CBFP 미적용 시
-- Random 입력: **평균 7.24 dB**  
-- Cosine 입력: **40.57 dB**
-
-<p align="center">
-  <img src="https://github.com/shhhhhhh1799/Image/blob/main/SQNR.png" alt="SQNR without CBFP" width="700"/>
-</p>
+➡️ **CBFP는 다양한 입력 신호 환경에서 SQNR을 안정적으로 유지하는 데 필수적임**을 확인할 수 있습니다.  
 
 ---
 
