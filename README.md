@@ -237,8 +237,6 @@ FPGA 환경에서 RTL Simulation을 수행하여 **Input Cycle과 Output Cycle�
   - RTL/Gate Simulation 결과가 MATLAB 기준 결과와 완전히 일치
   - FPGA 합성 결과 Timing 조건 충족 (Slack = 0.36 ns) 및 낮은 자원 사용률 (LUT 12.78%)
 
----
-
 ➡️ 본 프로젝트는 **FFT의 RTL 설계부터 FPGA 구현까지 전 과정을 검증**하며,  
 **CBFP 적용의 효과를 정량적으로 입증**했다는 점에서 의의가 큽니다.  
 향후 확장과 최적화를 통해 실제 상용 신호처리 시스템에 적용 가능한 수준으로 발전시킬 수 있습니다.
