@@ -224,16 +224,6 @@ FPGA 환경에서 RTL Simulation을 수행하여 **Input Cycle과 Output Cycle�
 
 ---
 
-## 📂 파일 구성 (예시)
-```plaintext
-FFT-Architecture/
-├── module0/          # Module 0 (9 → 11bit 변환)
-├── module1/          # Module 1 (11 → 12bit 변환)
-├── module2/          # Module 2 (12 → 13bit 변환)
-├── cbfp/             # CBFP 정규화 모듈
-├── sim/              # Testbench 및 시뮬레이션 결과
-└── docs/             # 설계 문서 및 분석 자료
-
 ## 🔮 결론
 
 ### ✅ 프로젝트 성과
