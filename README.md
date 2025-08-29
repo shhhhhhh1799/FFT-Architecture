@@ -36,7 +36,7 @@
 - Radix-2² 알고리즘 기반 파이프라인 구성  
 - CBFP (Convergent Block Floating Point) 적용  
 - MATLAB과 RTL 결과 비교 검증  
-- FPGA(Vivado) 기반 검증 (Zynq-7000, UltraZed 등)  
+- FPGA(Vivado) 기반 검증
 
 ---
 
